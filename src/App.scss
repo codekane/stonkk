@@ -1,0 +1,64 @@
+.stonkk-header {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.App {
+  border: 1px solid black;
+  width: 480px;
+  height: 640px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.stonk {
+  height: 72px;
+  border: 1px solid black;
+  margin: 3px 3px 3px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    float: left;
+    display: inline-block; 
+    width: 100px; 
+    margin-left: 15px;
+  }
+
+  .stonkk-info {
+    display: flex;
+    flex-wrap: wrap;
+    p {
+      width: 50%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.stonk-query {
+  height: 72px;
+  border: 1px solid black;
+  &-top {
+    height: 48px;
+    display: flex;
+    flex-direction: space-evenly;
+    justify-items: center;
+    justify-content: center;
+    .item { 
+      flex-basis: 120px;
+    }
+  }
+  &-bottom {
+    height: 24px;
+    text-align: center;
+  }
+}
+
+.perfect-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p, h2, h3, b { margin: 0 0 0 0; }
+  b { font-size: 1.4em; }
+}
