@@ -1,12 +1,31 @@
 import ReactDOM from 'react-dom';
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './index.css';
 import App from './App';
+import NavBar from './components/NavBar';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <div>
+        <NavBar />
+
+        <Switch>
+          <Route path='/analytics'>
+            <h1>Placeholder for Analytics</h1>
+          </Route>
+
+          <Route path='/'>
+            <App />
+          </Route>
+
+        </Switch>
+
+
+      </div>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

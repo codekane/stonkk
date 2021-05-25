@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from './logo.svg';
 import StonkQuote from "./components/StonkQuote.js";
 import './App.scss';
@@ -22,10 +21,6 @@ export default function App() {
     return json;
   }
 
-  const parseSummary = (arr) => {
-
-  }
-
 
   useEffect(() => {
     (async () => {
@@ -37,10 +32,7 @@ export default function App() {
 
   return(
     <div className="App">
-      <header className="stonkk-header">
-        <h1>Stonkk</h1>
-      </header>
-
+      
       {data.map(d => (<StonkQuote key={Object.keys(d)[0]} data={d} />))}
     </div>
 
