@@ -69,4 +69,57 @@ nav#stonkk-nav {
   ul li {
     margin: 0 5px;
   }
+  border-bottom: 1px solid black;
+  header {
+    margin-right: 66px;
+    h1 { color: #b70202; }
+  }
+}
+
+#sidebar {
+  width: 320px;
+  //background-color: rgba(0,0,0,0.04);
+  border-right: 1px solid black;
+}
+
+.stonkSummary {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  h3 {
+    font-size: 24px; 
+    min-width: 75px;
+}
+
+  .ssDetails {
+    margin-left: 15px;
+    width: 100%;
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+      letter-spacing: -0.85px;
+    }
+    span.count {
+      font-size: 14px;
+    }
+    span.price {
+      b { font-size: 19px; }
+    }
+  }
+
+  .bottomRow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.sidebarHeader{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.rightBarred {
+  width: calc(100% - 320px);
+  float: right;
 }

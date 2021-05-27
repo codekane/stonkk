@@ -9,7 +9,7 @@ export default function NavBar(props) {
       </header>
       <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/analytics'>Analytics</Link></li>
+        <li><Link to='/wallstbets'>/r/wallstbets</Link></li>
       </ul>
     </nav>
 
