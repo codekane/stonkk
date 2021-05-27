@@ -32,7 +32,6 @@ export default function App() {
 
   return(
     <div className="App">
-      
       {data.map(d => (<StonkQuote key={Object.keys(d)[0]} data={d} />))}
     </div>
 
