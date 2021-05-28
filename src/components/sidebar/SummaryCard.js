@@ -22,7 +22,7 @@ export default function SummaryCard(props) {
         <p>{props.name}</p>
 
         <div className="bottomRow">
-          <span className="count">500 <img src={star} /></span>
+          <span className="count">{props.count} <img src={star} /></span>
           <span className="price"><b>${props.price.price.toFixed(2)}</b></span>
           <span className="change" style={{color: changeColor(props.price.change)}}>{changeAdjustor(props.price.change)} </span>
 

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import NavBar from './components/NavBar';
 import SideBar from './components/sidebar';
 import NothingYet from './components/NothingYet';
+import Content from './components/content';
 
 export default function App() {
 
@@ -15,7 +16,7 @@ export default function App() {
           <Route path='/wallstbets'>
             <div style={{display: "flex"}}>
               <SideBar />
-              <NothingYet />
+              <Content />
             </div>
           </Route>
 

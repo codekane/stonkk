@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Impact";
+  src: local("Impact"), url("./Impact.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SourceCodePro";
+  src: local("SourceCodePro"), url("./SourceCodePro-Bold.ttf") format("truetype");
+  font-weight: bold;
+}

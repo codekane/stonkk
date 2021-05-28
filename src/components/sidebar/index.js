@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { Link } from "react-router-dom";
 import SummaryCard from './SummaryCard';
 
 export default function SideBar(props) {
@@ -22,6 +23,9 @@ export default function SideBar(props) {
     } else { return { price: stock.regularMarketPrice, change: stock.regularMarketChange } }
   }
 
+  let urlPath = (sym) => {
+    return `/wallstbets/${sym}`;
+  }
 
   return(
     <div id="sidebar">
@@ -30,12 +34,13 @@ export default function SideBar(props) {
         <span>May 26, 2021  <a href="#">change date</a></span>
       </div>
 
-      {symbols.map(symbol => (<SummaryCard key={symbol} 
+      {symbols.map(symbol => (<Link to={urlPath(symbol)}><SummaryCard key={symbol} 
                                symbol={symbol}
                                name={stonks[symbol]["displayName"]}
                                price={dollarClock(stonks[symbol])}
+                               count={stonks[symbol]["count"]}
 
-      />))}
+      /></Link>))}
     </div>
 
 
