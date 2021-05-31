@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link, useLocation, useParams, useRouteMatch } from "react-router-dom";
 import props from 'prop-types';
+import ComingSoon from './ComingSoon/index.js';
 export default function Content() {
 
   let location = useLocation();
@@ -12,14 +13,10 @@ export default function Content() {
         <Switch>
 
 
-          <Route path='/wallstbets/:sym'>
-            {/*This doesn't work I give up for today seriously oh my god I need to ...}
-               Seriously re-evaluate how I structure my program}*/}
-          </Route>
-
+          
 
           <Route path='/wallstbets'>
-            <h3 style={{marginTop: "200px", fontSize: "3rem"}}>Select a Stonk on the Right for more Information</h3>
+            <ComingSoon />
           </Route>
 
         </Switch>
